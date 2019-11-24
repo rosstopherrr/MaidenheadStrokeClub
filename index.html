@@ -1005,14 +1005,6 @@ footer a:hover{
 
 <script>
 
-
-
-
-// fittext
-(function($){$.fn.fitText=function(kompressor,options){var compressor=kompressor||1,settings=$.extend({'minFontSize':Number.NEGATIVE_INFINITY,'maxFontSize':Number.POSITIVE_INFINITY},options);return this.each(function(){var $this=$(this);var resizer=function(){$this.css('font-size',Math.max(Math.min($this.width()/(compressor*10),parseFloat(settings.maxFontSize)),parseFloat(settings.minFontSize)));};resizer();$(window).on('resize.fittext orientationchange.fittext',resizer);});};})(jQuery);
-
-
-
 (function($) {
     // run the accordion
   var allPanels = $('.content').hide();
@@ -1056,33 +1048,12 @@ footer a:hover{
 // box 
   
     
- // jQuery(window).on("resize", runslides);
-   //     jQuery(document).on("ready", fitmenow);
+ jQuery(window).on("resize", runslides);
+       jQuery(document).on("ready", fitmenow);
   
 firstInit();
-})(jQuery); // END
+    })(jQuery); // END
 
-
-var myflag = false;
-
-
-function runslides(){
-$.getScript( "http://bxslider.com/lib/jquery.bxslider.js", function( data, textStatus, jqxhr ) {
-
- // BX SLIDE
-
-
-    if (!myflag) {
-      $('section .bxslider').bxSlider({
-		auto: true,
-		mode: 'fade'
-	});
-   } //end if
-myflag = true;
-
-
-});
-}
 
 
 $(".carousel").swipe({
