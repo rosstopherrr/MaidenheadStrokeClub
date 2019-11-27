@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Maidenhead & Stroke Club</title>
+    <title>Maidenhead & District Stroke Club</title>
 
-     <!-- Bootstrap core CSS -->
-  <!-- <link href="vendor/bootstrap3/css/bootstrap.min.css" rel="stylesheet"> -->
-
-  
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" type="text/javascript"></script>
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,553 +13,9 @@
   <link rel='stylesheet' href=' https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700'>
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+  <link href='CSS/style.css' rel='stylesheet' type='text/css'>
 </head>
 <style>
-     
-
-body {
-  font: 16px/26px"Lato", Helvetica Neue, Arial;
-  margin: 0;
-  padding:20px 0 0 0;
-  background:#222222;
-  height:100%;
-  background-color: white;
-}
-
-
-
-
-.accordion {
-  margin: 0 auto;
-}
-
-.header1 {
-    border-top: 1px solid #222222;
-}
-
-header{
-  position:relative;
-  z-index:400;
-   font-family:'Josefin Sans',sans-serif;
-  text-transform:uppercase;
-  letter-spacing:2px;
-  font-weight:400;
-  cursor:pointer;
-  background: white;
-  padding: 5px;
-  color: black;
-  border-bottom: 1px solid #222222;
-transition: background 1.0s ease-in-out;
--moz-transition: background 1.0s ease-in-out;
--webkit-transition: background 1.0s ease-in-out;}
-
-header h1 {  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  font-family: 'Raleway', sans-serif;
-  color: #5e276b;
-} 
-
-h3 {
-    font-family: 'Raleway', sans-serif;
-}
-
-.content{ 
-  display: none;
-  width:100%;
-  color:#333;
-  background-color: #f5f5ef;
-  }
-
-p {
-    padding:10px;
-    margin:0;
-    font-family: 'Raleway', sans-serif;
-    }
-
-  
-
-
-.selected {
-  font-size:130%;
-  padding-top:9px;
-  background: white;
-}
-
-.ticker {
-    overflow: hidden;
-    height: 90px;
-    vertical-align: baseline;
-}
-
-
-
-.ticker h1 { 
-  font-family:'Josefin Sans',sans-serif;
-  font-weight:300;
-  color:#5e276b; 
-  font-size: 3.46666666667em;
-    text-transform: uppercase;
-    letter-spacing: 0.20em;
-    margin-bottom:30px;
-  height:60px;
-     padding:0 ;
-   color: #fff;
-  line-height: 1.17em;
-    -webkit-transition: margin-top 0.5s ease-in-out;
-    -moz-transition: margin-top 0.5s ease-in-out;
-    -o-transition: margin-top 0.5s ease-in-out;
-    transition: margin-top 0.5s ease-in-out;
-}
-
-
-div.dark {background:#222;   
-width:100%;  text-align:center; 
-  padding:22px 0 0 0}
-
-.modal-header { background: #8FE4FE }
-.modal-header h4 { color: #fff }
-.modal-footer { background: #2b2b2b }
-/* BX SLide */
-
-/** RESET AND LAYOUT
-===================================*/
-
-.bx-wrapper {
-	position: relative;
-	margin: 0 auto 60px;
-	padding: 0;
-	*zoom: 1;
-}
-
-.bx-wrapper img {
-	max-width: 100%;
-	display: block;
-}
-
-.col-md-6 p{
-  padding:0 90px 30px 90px;
-  font-size:0.8em;
-  text-align:justify;
-}
-
-/** THEME
-===================================*/
-
-.bx-wrapper .bx-viewport {
-	-moz-box-shadow: 0 0 5px #ccc;
-	-webkit-box-shadow: 0 0 5px #ccc;
-	box-shadow: 0 0 5px #ccc;
-	border: solid #fff 5px;
-	left: 0px;
-	background: #222222;
-}
-
-.bx-wrapper .bx-pager,
-.bx-wrapper .bx-controls-auto {
-	position: absolute;
-	bottom: -30px;
-	width: 100%;
-}
-
-/* LOADER */
-
-.bx-wrapper .bx-loading {
-	background: url(http://bxslider.com/lib/images/bx_loader.gif) center center no-repeat #ffffff;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 2000;
-}
-
-/* PAGER */
-
-.bx-wrapper .bx-pager {
-	text-align: center;
-	font-size: .85em;
-	font-family: Arial;
-	font-weight: bold;
-	color: #666;
-	padding-top: 20px;
-}
-
-.bx-wrapper .bx-pager .bx-pager-item,
-.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
-	display: inline-block;
-	*zoom: 1;
-	*display: inline;
-}
-
-.bx-wrapper .bx-pager.bx-default-pager a {
-	background: #666;
-	text-indent: -9999px;
-	display: block;
-	width: 10px;
-	height: 10px;
-	margin: 0 5px;
-	outline: 0;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-}
-
-.bx-wrapper .bx-pager.bx-default-pager a:hover,
-.bx-wrapper .bx-pager.bx-default-pager a.active {
-	background: #000;
-}
-
-/* DIRECTION CONTROLS (NEXT / PREV) */
-
-.bx-wrapper .bx-prev {
-	left: 10px;
-	background: url(http://bxslider.com/lib/images/controls.png) no-repeat 0 -32px;
-}
-
-.bx-wrapper .bx-next {
-	right: 10px;
-	background: url(http://bxslider.com/lib/images/controls.png) no-repeat -43px -32px;
-}
-
-.bx-wrapper .bx-prev:hover {
-	background-position: 0 0;
-}
-
-.bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
-}
-
-.bx-wrapper .bx-controls-direction a {
-	position: absolute;
-	top: 50%;
-	margin-top: -16px;
-	outline: 0;
-	width: 32px;
-	height: 32px;
-	text-indent: -9999px;
-	z-index: 9999;
-}
-
-.bx-wrapper .bx-controls-direction a.disabled {
-	display: none;
-}
-
-/* AUTO CONTROLS (START / STOP) */
-
-.bx-wrapper .bx-controls-auto {
-	text-align: center;
-}
-
-.bx-wrapper .bx-controls-auto .bx-start {
-	display: block;
-	text-indent: -9999px;
-	width: 10px;
-	height: 11px;
-	outline: 0;
-	background: url(http://bxslider.com/lib/images/controls.png) -86px -11px no-repeat;
-	margin: 0 3px;
-}
-
-.bx-wrapper .bx-controls-auto .bx-start:hover,
-.bx-wrapper .bx-controls-auto .bx-start.active {
-	background-position: -86px 0;
-}
-
-.bx-wrapper .bx-controls-auto .bx-stop {
-	display: block;
-	text-indent: -9999px;
-	width: 9px;
-	height: 11px;
-	outline: 0;
-	background: url(http://bxslider.com/lib/images/controls.png) -86px -44px no-repeat;
-	margin: 0 3px;
-}
-
-.bx-wrapper .bx-controls-auto .bx-stop:hover,
-.bx-wrapper .bx-controls-auto .bx-stop.active {
-	background-position: -86px -33px;
-}
-
-/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
-
-.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
-	text-align: left;
-	width: 80%;
-}
-
-.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
-	right: 0;
-	width: 35px;
-}
-
-/* IMAGE CAPTIONS */
-
-.bx-wrapper .bx-caption {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	background: #666\9;
-	background: rgba(80, 80, 80, 0.75);
-	width: 100%;
-}
-
-.bx-wrapper .bx-caption span {
-	color: #fff;
-	font-family: Arial;
-	display: block;
-	font-size: .85em;
-	padding: 10px;
-}
-
-/* gallery */
-
-.andrew-masonry
-{
- padding:40px;
-}
-.grid figure {
-    margin: 0;
-    position: relative;
-}
-.grid figure img {
-    width: 100%;
-    display: block;
-    position: relative;
-}
-.grid figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    color: #fff;
-    background: #9ab09f;
-}
-.grid figcaption h5 {
-    margin: 0;
-    padding-top: 0;
-    padding-left: 20px;
-    padding-bottom: 5px;
-    color: #fff;
-    font-weight: 700;
-    text-align: left;
-    letter-spacing: 2px;
-    font-size: 0.7em;
-    text-transform: uppercase;
-}
-.grid figcaption a {
-    text-align: left;
-    padding: 5px 10px;
-    margin-left: 20px;
-    display: inline-block;
-    background: #d8d3b5;
-    color: #636757;
-    font-size: 13px;
-    border:0
-}
-
-.mask figure { overflow: hidden;margin-bottom:10px; }
-.mask figure img {
-    -webkit-transition: -webkit-transform .4s;
-    -moz-transition: -moz-transform .4s;
-    transition: transform .4s;
-}
-
-.no-touch .mask figure:hover img,
-.mask figure.cs-hover img {
-    -webkit-transform: translateY(-30px);
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    transform: translateY(-30px);
-}
-
-.mask figcaption {
-    height: 50px;
-    width: 100%;
-    top: auto;
-    bottom: 0;
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-    -moz-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%);
-    -webkit-transition: -webkit-transform .4s,opacity .1s .3s;
-    -moz-transition: -moz-transform .4s,opacity .1s .3s;
-    transition: transform .4s,opacity .1s .3s;
-}
-.no-touch .mask figure:hover figcaption,
-.mask figure.cs-hover figcaption {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    transform: translateY(0px);
-    -webkit-transition: -webkit-transform .4s,opacity .1s;
-    -moz-transition: -moz-transform .4s,opacity .1s;
-    transition: transform .4s,opacity .1s;
-}
-.mask figcaption a {
-    position: absolute;
-    top: 10px;
-    bottom: 10px;
-    right: 30px;
-}
-
-@media screen and (max-width: 460px) { /* ==================== Smallest state ==================== */
-.accordion header{
-font-size:2.0em;
-  padding:12px 0px 12px 0px
-}
-  
-  
-  .col-md-6 p{
-  padding:0 10px 4px 10px;
-  font-size:0.9em;
-  text-align:left;
-}
-  
-  section header {
-background: white;
-
-}
-  
-
- section header:hover {
-	background: white;
-}
-
-}
-
-
-/* header showcase */
-#showcase {
-  min-height: 250px;
-  color: #fff;
-  text-align: center;
-  
-}
-
-#showcase .bg-image {
-  position: absolute;
-  background:url("IMG/purple-hands.png"); 
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-size: 550px 700px; 
-  width: 100%;
-  height: 250px;
-  z-index: -1;
-  background-color: white;
-}
-
-#showcase h1 {
-  padding-top: 100px;
-  padding-bottom: 0;
-}
-
-#home {
-    margin-top: 30px;
-}
-
-#main-header {
-    color: #5e276b;
-    font-size: 5rem;
-}
-
-.small-hands {
-    display: none;
-}
-
-
-@media only screen and (max-width: 425px) {
-    #showcase .bg-image  {
-        background-size: 400px 400px;
-        height: 200px;
-}
-}
-
-@media all and (max-width: 436px) {
-    #showcase .bg-image  {
-      background-position: cover;
-}
-    .hands {
-        display: none;
-    }
-    .small-hands {
-        display: block;
-        float: right;
-    }
-} 
-
-/* @media only screen and (max-width: 1024px) {
-    #showcase .bg-image  {
-        background-position: 400px -270px;
-}
-} */
-
-
-footer{
-    background: white;
-    /* background: #222; */
-    padding: 80px 0;
-    position: relative;
-    text-align: center;
-}
-
-footer h3{
-    font-size: 36px;
-    margin-bottom: 30px;
-    text-transform: capitalize;
-    color: #5e276b;
-    letter-spacing: 0.05em;
-}
-
-footer h3:after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    margin: 20px auto 0;
-    background:#5e276b;
-}
-
-footer p{
-    font-size: 18px;
-    line-height: 1.6;
-    color: #adadad;
-}
-
-.gap{
-    display: block;
-    margin-top: 50px;
-}
-
-footer span.glyphicon{
-    color: #5e276b;
-    font-size: 28px;
-    display: block;
-    margin: 0 auto 30px;
-}
-
-footer a{
-    color: #5e276b;
-    
-}
-
-footer a:hover{
-    color: black;
-}
-
-.icons {
-    padding: 15px 10px;
-    font-size: 25px;
-}
-
-
-
-
 
 
 </style>
@@ -599,23 +51,6 @@ footer a:hover{
           </div>
           <!--/.container-fluid -->
         </nav>
-      
-<!-- <div id="home">
-
-        <div class="container">
-            
-               <div class="col-lg-12">
-                    <h1 id="main-header">Maidenhead & District Stroke Club</h1>
-            
-             
-            
-                   <img class="purple-hands" src="IMG/purple-hands.png" alt="">
-                    
-             
-    </div>
-       </div> 
-
-    </div> -->
 
     <div id="home">
             <div class="container">
@@ -697,9 +132,9 @@ footer a:hover{
                            <div class="row"> 
                                <div class="col-md-6">
                        
-                            <p class="text-left">If you are a stroke survivor, or someone who is who you feel may benefit from joining us - please get in touch!
+                             <p class="text-left">If you are a stroke survivor, or someone who is who you feel may benefit from joining us - please get in touch!
                                  </p>
-				      <p class="text-left">
+                                 <p class="text-left">
                                         Email us at <a href="mailto:maidenheadstrokeclub@gmail.com">maidenheadstrokeclub@gmail.com</a> (this is the quickest way). 
                                         - we need to know your name, when your stroke occurred, your contact details, and the name of a carer, family member of friend who can stay with you at the first few meetings to help you settle in.
                                         Alternatively, you can call us on <a href="tel:07872144350">07872144350</a>  - please leave a voicemail if the phone isn't answered!
@@ -785,7 +220,7 @@ footer a:hover{
              </section>
              
 
-                 <section>
+             <section>
                     <header><h1 class="text-center">Links</h1></header>
                     <div class="content">  
                             <div class="container">
@@ -849,7 +284,7 @@ footer a:hover{
                                  
                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                                      <!-- Indicators -->
-<!--                                     <ol class="carousel-indicators">
+                                     <ol class="carousel-indicators">
                                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
@@ -873,8 +308,9 @@ footer a:hover{
                                        <li data-target="#carousel-example-generic" data-slide-to="20"></li>
                                        <li data-target="#carousel-example-generic" data-slide-to="21"></li>
                                        <li data-target="#carousel-example-generic" data-slide-to="22"></li>
-                                     </ol> -->
-<!-- Wrapper for slides -->
+                                     </ol>
+                                 
+                                     <!-- Wrapper for slides -->
                                      <div class="carousel-inner" role="listbox">
                                        <div class="item active">
                                          <img src="IMG/20141024_110826-min.jpg">
@@ -949,7 +385,7 @@ footer a:hover{
                                          <img src="IMG/Thrive Indoor Gardening-min.jpg">
                                         </div>
                                      </div>
-					   
+                                 
                                      <!-- Controls -->
                                      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -1002,74 +438,6 @@ footer a:hover{
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
 <script src="vendor/bootstrap3/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-
-<script>
-
-(function($) {
-    // run the accordion
-  var allPanels = $('.content').hide();
-  var heads = $('.accordion header');
-  $('header').on('click', function() {
-
-      $this = $(this);
-      $target =  $this.parent().find('div.content');
-      if(!$target.hasClass('active')){
-      heads.removeClass('selected');
-      $(this).addClass('selected');
-      allPanels.removeClass('active').slideUp();
-      $target.addClass('active').slideDown();
-      $('html, body').animate({scrollTop: $($target).offset().bottom}, 5000);
-      }
-   fitmenow(); // trigger fitText
-    runslides();
-    msn();
-  });
-  
-
-  
-  // ticker
-  
-  var current = 1;
-    var height = jQuery('.ticker').height();
-    var numberDivs = jQuery('.ticker').children().length;
-    var first = jQuery('.ticker h1:nth-child(1)');
-    setInterval(function() {
-        var number = current*-height;
-        first.css('margin-top', number + 'px');
-        if (current === numberDivs) {
-            first.css('margin-top', '0px');
-            current = 1;
-        } else 
-            current++;
-    }, 2500);
-
- 
-
-// box 
-  
-    
- jQuery(window).on("resize", runslides);
-       jQuery(document).on("ready", fitmenow);
-  
-firstInit();
-    })(jQuery); // END
-
-
-
-$(".carousel").swipe({
-
-swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-
-  if (direction == 'left') $(this).carousel('next');
-  if (direction == 'right') $(this).carousel('prev');
-
-},
-allowPageScroll:"vertical"
-
-});
-
- 
-</script>
-
-
+<script src="JS/accordion.js"></script>
+<script src="JS/carousel.js"></script>
 </html>
